@@ -1,0 +1,15 @@
+<html>
+	<head>
+		<title>Confirmation</title>
+	</head>
+	<body>
+	
+		Title : {{course['title']}}
+		Description : {{course['description']}}
+
+    	<form action='/delete/'{{course['id']}} method='POST'>
+    		<input type="submit" value="Delete">
+    	</form>
+    	<button>Back</button>
+	</body>
+</html>
